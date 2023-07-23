@@ -18,7 +18,7 @@ class BrowserFactory {
 
     companion object Factory {
         fun getBrownser() : WebDriver {
-            return getBrownser(Browser.CHROME)
+            return getBrownser(Browser.CHROME_HEADLESS)
         }
 
         fun getBrownser(browserUser : Browser) : WebDriver {
