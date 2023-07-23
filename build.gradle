@@ -12,13 +12,12 @@ repositories {
 
 dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation 'io.cucumber:cucumber-java:7.13.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.13.0'
     implementation 'org.seleniumhq.selenium:selenium-java:4.10.0'
     implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
     implementation 'org.slf4j:slf4j-nop:2.0.7'
-}
-
-test {
-    useJUnitPlatform()
+    implementation 'com.rajatthareja:reportbuilder:1.0.3'
 }
 
 compileKotlin {
@@ -27,8 +26,4 @@ compileKotlin {
 
 compileTestKotlin {
     kotlinOptions.jvmTarget = '11'
-}
-
-application {
-    mainClassName = 'MainKt'
 }
